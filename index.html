@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Quote Items</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/dist/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-body-tertiary">
+  <div class="container py-3">
+    <main >
+      <div>
+        <h2>Quotation</h2>
+      </div>
+
+      <div class="container px-0 my-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb-chevron py-3 bg-body-tertiary rounded-3">
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis active fw-semibold text-decoration-none" href="./quotation.html">Quote Items</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis text-secondary text-decoration-none" href="./review.html">Review</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis text-secondary text-decoration-none" href="./submission.html">Submitted</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-md-12 col-lg-12">
+          <form class="needs-validation mb-3" novalidate>
+            <div class="p-5" style="border: 1px solid black">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="username" class="form-label">Company: </label>
+                  <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="username" placeholder="Enter your company name" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="name" class="form-label"><span class="text-danger">* </span>Name: </label>
+                  <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+                    <div class="invalid-feedback">Your name is required.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label"><span class="text-danger">* </span>Email: </label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com" required />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="form-check" class="form-label"><span class="text-danger">* </span>GST Applicable:
+                  </label>
+                  <div class="">
+                    <div class="form-check">
+                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required />
+                      <label class="form-check-label" for="credit">Yes</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required />
+                      <label class="form-check-label" for="debit">NO</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    <label for="date" class="col-form-label"><span class="text-danger">* </span>Valid Till:
+                    </label>
+                    <div class="input-group date" id="datepicker">
+                      <input type="text" class="form-control" id="date" />
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                
+                </div>
+               
+              </div>
+            </div>
+          </form>
+          <div class="p-5 my-5 p-sm-2" style="border: 1px solid black">
+
+            <div class="col-md-12 ">
+              <table class="table my-4 ">
+                <tbody>
+                  <tr>
+                    <td style="width:25%">Company</th>
+                    <td class="fw-bold">
+                      <span class="px-2">: </span>
+                      ABC Engineering Pte Ltd</th>
+                  </tr>
+
+                  <tr>
+                    <td>Budget</th>
+                    <td class="fw-bold">
+                      <span class="px-2">: </span>
+                      $ 3,500.00</th>
+                  </tr>
+
+                  <tr>
+                    <td style="width:25%">Contact Person</th>
+                    <td class="fw-bold">
+                      <span class="px-2">: </span>
+                      Peter Parker</th>
+                  </tr>
+
+                  <tr>
+                    <td style="width:25%">Contact Number</th>
+                    <td class="fw-bold">
+                      <span class="px-2">: </span>
+                      91234828</th>
+                  </tr>
+
+                  <tr>
+                    <td style="width:25%">Email</th>
+                    <td class="fw-bold">
+                      <span class="px-2">: </span>
+                      spiderman@avengers.com</th>
+                  </tr>
+
+                  <tr>
+                    <td style="width:25%">Validity Period</th>
+                    <td class="fw-bold">
+                      <span class="px-2">: </span>
+                      30 days</th>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <p class="fw-bold">Additional Notes</p>
+              <p>Lorem ipsum dolor sit, um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam
+                rerum! um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! aquod
+                dolore quisquam quia exercitationem earum quae ipsa numquam rerum!
+              </p>
+
+            </div>
+          </div>
+            
+            <div class="col-12">
+              <table class="table table-responsive border border-black text-center">
+
+                <thead>
+                  <tr class="bg-black  text-white">
+                    <th>Request</th>
+                    <th><span class="text-danger">* </span>Item</th>
+                    <th><span class="text-white">* </span>Quantity</th>
+                    <th><span class="text-danger">* </span>U. Price</th>
+                    <th>Image</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="img-fluid" src="./assets/img/mouse.png" alt="">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="w-70"  placeholder="50 units required" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      $ <input class="w-60" type="number">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <button class="px-3">Browse</button>
+                    </td>
+                  </tr>
+
+                  <tr style="visibility: collapse;">
+                    <td>
+                      <img class="img-fluid" src="./assets/img/keyboard.png" alt="">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="w-70"  placeholder="25 units required" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="w-70"  placeholder="25 units required" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <button class="px-3">Browse</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-fluid" src="./assets/img/keyboard.png" alt="">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="w-70"  placeholder="25 units required" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      $ <input class="w-60" type="number">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <button class="px-3">Browse</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-fluid" src="./assets/img/usb.png" alt="">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="w-70"  placeholder="150 units required" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      $ <input class="w-60" type="number">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <button class="px-3">Browse</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img class="img-fluid" src="./assets/img/speaker.png" alt="">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <input class="w-70"  placeholder="10 units required" type="text">
+                    </td>
+                    <td class="position-relative align-middle">
+                      $ <input class="w-60" type="number">
+                    </td>
+                    <td class="position-relative align-middle">
+                      <button class="px-3">Browse</button>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <div class="form-floating my-5">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+                <label for="floatingTextarea2">Additional Notes</label>
+              </div>
+
+            </div>
+          
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <a href="./review.html" class="w-50 btn btn-success px-5 py-3 rounded-0" type="button">Next</a>
+            </div>
+          
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+  </script>
+  <script src="./assets/dist/js/main.js"></script>
+</body>
+
+</html>

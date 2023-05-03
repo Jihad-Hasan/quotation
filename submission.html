@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Review Page</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/dist/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-body-tertiary">
+  <div class="container py-3">
+    <main>
+      <div>
+        <h2>Quotation</h2>
+      </div>
+      <div class="container px-0 my-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb-chevron py-3 bg-body-tertiary rounded-3">
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis text-secondary text-decoration-none" href="./quotation.html">Quote Items</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis text-secondary text-decoration-none" href="./review.html">Review</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis active fw-semibold text-decoration-none"
+                href="./submission.html">Submitted</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-md-12 col-lg-12">
+          <div class="p-3 my-5" style="border: 1px solid black">
+            <div class="row g-3">
+              <div class="col-md-12">
+                <p class="text-success text-center">
+                  Quotation Submitted Successfully
+                </p>
+                <p class="fw-semibold">
+                  Thanks for your submission. Peter Parker will review your
+                  quotation and get back to you should there be any
+                  clarifications required.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form class="needs-validation mb-3" novalidate>
+            <div class="p-5" style="border: 1px solid black">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="username" class="form-label">Company: </label>
+                  <div class="input-group has-validation">
+                    <input type="text" class="form-control fw-bold" id="username" value="ABC Engineering Pte Ltd"
+                      placeholder="Enter your company name" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="name" class="form-label"><span class="text-danger">* </span>Name:
+                  </label>
+                  <div class="input-group has-validation">
+                    <input type="text" class="form-control fw-bold" id="name" value="Peter Parker"
+                      placeholder="Enter your name" required />
+                    <div class="invalid-feedback">Your name is required.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label"><span class="text-danger">* </span>Email:
+                  </label>
+                  <input type="email" class="form-control fw-bold" value="spiderman@avengers.com" id="email"
+                    placeholder="you@example.com" required />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="form-check" class="form-label"><span class="text-danger">* </span>GST Applicable:
+                  </label>
+                  <div class="">
+                    <div class="form-check">
+                      <label class="form-check-label fw-bold" for="credit">Yes</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    <label for="date" class="col-form-label"><span class="text-danger">* </span>Valid Till:
+                    </label>
+                    <div class="input-group date" id="datepicker">
+                      <input type="text" value="##########" class="form-control fw-bold" id="date" />
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="col-12 mt-5">
+            <table class="table table-responsive border border-black text-center">
+              <thead>
+                <tr class="bg-black text-white">
+                  <th>Request</th>
+                  <th>Item</th>
+                  <th>Quantity</th>
+                  <th>U. Price</th>
+                  <th>Sub Total</th>
+                  <th>Image</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <tr>
+                  <td>
+                    <img class="img-fluid" src="./assets/img/mouse.png" alt="" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value="Logitech M2 Mouse" class="" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input class="w-70" value="50" placeholder="50 units required" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value="$ 25.00" class="w-60" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value="$ 1250.00" class="w-60" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <img class="img-fluid" src="./assets/img/mouse.png" alt="" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img class="img-fluid" src="./assets/img/keyboard.png" alt="" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value="Xiaomi XM940" class="" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input class="w-70" value="25" placeholder="50 units required" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value="$ 36.50" class="w-60" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value=" $ 912.50" class="w-60" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <img class="img-fluid" src="./assets/img/keyboard.png" alt="" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img class="img-fluid" src="./assets/img/usb.png" alt="" />
+                  </td>
+                  <td colspan="5" class="position-relative align-middle">
+                    <p>Did not quote</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img class="img-fluid" src="./assets/img/speaker.png" alt="" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value="Logitech D2 Speakers" class="" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input class="w-70" placeholder="10 units required" type="text" value="10" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value="$ 8.90" class="w-60" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input value="$ 89.00" class="w-60" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <img class="img-fluid" src="./assets/img/speaker.png" alt="" />
+                  </td>
+                </tr>
+
+                <tr style="visibility: collapse">
+                  <td>
+                    <img class="img-fluid" src="./assets/img/keyboard.png" alt="" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input class="" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input class="w-70" placeholder="25 units required" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input class="w-70" placeholder="25 units required" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <input class="w-70" placeholder="25 units required" type="text" />
+                  </td>
+                  <td class="position-relative align-middle">
+                    <button class="px-3">Browse</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="background-color: transparent"></td>
+                  <td></td>
+                  <td></td>
+                  <td class="position-relative align-middle">
+                    Total
+                    <br />
+                    GST
+                    <hr />
+                    Grand Total
+                  </td>
+                  <td class="position-relative align-middle">
+                    $ 2,251.50
+                    <br />
+                    $ 180.12
+                    <hr />
+                    $ 2,431.62
+                  </td>
+
+                  <td></td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <div class="form-floating my-5">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 150px">
+                      Lorem ipsum dolor sit, um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! Lorem ipsum dolor sit, um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum!Lorem ipsum dolor sit, um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! Lorem ipsum dolor sit, um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! um dolor sit, aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum! aquod dolore quisquam quia exercitationem earum quae ipsa numquam rerum!</textarea>
+              <label class="fw-bold" for="floatingTextarea2">Additional Notes</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+  </script>
+  <script src="./assets/dist/js/main.js"></script>
+</body>
+
+</html>
